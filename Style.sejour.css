@@ -55,12 +55,6 @@
     right: 0;
     top: 0;
     bottom: 0; }
-  .single-hero-slide .hero-slides-content {
-    display: inline-block;
-    padding: 60px 50px;
-    background-color: rgba(0, 0, 0, 0.63);
-    border: 2px solid #cb8670;
-    text-align: center; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .single-hero-slide .hero-slides-content {
         padding: 40px 20px; } }
@@ -127,22 +121,30 @@
     }
 
     .book-button {
-      background-color: #f8abe5;
+      background-color: #007bff;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 5px;
+      border-radius: 30px;
       cursor: pointer;
       margin-top: 10px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+    
+    .book-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
 footer {
-    position: fixed; /* Fix the footer at the bottom */
+    position: relative; /* Changed from fixed to relative */
     left: 0; /* Align to the left */
-    bottom: 0; /* Align to the bottom */
     width: 100%; /* Full width */
     background-color: #0f0e0e; /* Background color for footer */
+    color: #fff; /* Text color */
     padding: 20px; /* Padding for footer */
     text-align: center; /* Center text */
-    z-index: 1000; /* Ensure it stays above other content */
+    margin-top: auto; /* Push footer to bottom */
 }

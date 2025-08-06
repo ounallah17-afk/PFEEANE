@@ -227,16 +227,22 @@ header {
         top: -800px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.9);
         width: 100%;
         height: 90vh;
         backdrop-filter: blur(20px);
         transition: .3s;
+        z-index: 999;
     }
 
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
+        padding-top: 50px;
+    }
+
+    .nav-menu ul li {
+        margin: 20px 0;
     }
 
     .nav-menu-btn {
@@ -245,16 +251,16 @@ header {
 
     .nav-menu-btn i {
         font-size: 25px;
-        color: #fff;
+        color: #333;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
 
     .nav-menu-btn i:hover {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 1);
     }
 }
 
@@ -334,7 +340,7 @@ main {
 }
 
 footer {
-    background-color: #faf4f4; /* Couleur de fond du footer */
+    background-color: #333; /* Couleur de fond du footer */
     color: #fff; /* Couleur du texte */
     padding: 20px; /* Espacement intérieur */
     padding-bottom: 0px;
@@ -376,7 +382,7 @@ footer {
 .hero {
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
-    background-image: url('img/m.jpg'); /* Background image */
+    background-image: url('m.jpg'); /* Background image */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     color: white; /* Text color */
