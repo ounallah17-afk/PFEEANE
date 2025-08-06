@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonPlan Tunisie - Accueil</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>BonPlan Tunisie</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="Acceuil.html" class="link active">Acceuil</a></li>
+                    <li><a href="sejours.html" class="link">Séjour en Tunisie</a></li>
+                    <li><a href="plan.html" class="link">Plan</a></li>
+                    <li><a href="qui.html" class="link">Qui sommes-nous?</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <div class="hero">
+    <h1>Découvrez le Paradis</h1>
+    <p>Découvrez les meilleurs offres des séjours en tunisie et planifier votre prochain voyage</p>
+    <a href="#" class="btn">Je Découvre</a>
+</div>
+
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 BonPlan Tunisie. Tous droits réservés.</p>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+
+            if(i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+
+    
+    </script>
+    <script>
+    const heroSection = document.querySelector('.hero');
+    const heroImages = [
+        'carthage.jpg',
+        'balade.jpg',
+        'thecliff.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeHeroBackground() {
+        heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % heroImages.length; // Cycle through images
+    }
+
+    setInterval(changeHeroBackground, 3000); // Change every 3 seconds
+</script>
+</body>
+</html>

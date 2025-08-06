@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonPlan Tunisie - Accueil</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plan.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>BonPlan Tunisie</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="Acceuil.html" class="link active">Acceuil</a></li>
+                    <li><a href="sejours.html" class="link">Séjour en Tunisie</a></li>
+                    <li><a href="plan.html" class="link">Plan</a></li>
+                    <li><a href="qui.html" class="link">Qui sommes-nous?</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+       <div class="hero-content">
+            <h1>Plan</h1>
+            <div class="image-placeholder">
+                <img src="path/to/tunisia-image.jpg" alt="Tunisian Guesthouse" style="max-width: 100%;">
+            </div>
+            <p>Consultez nos plans de voyage et découvrez les meilleures options pour votre séjour en Tunisie.</p>
+            <div class="plan-teaser">
+                <p><strong>Plan Options:</strong> Weekend Getaway - Relax in style | Family Retreat - Fun for all | Luxury Stay - Indulge yourself</p>
+                <a href="#" class="btn" style="background-color: #ff6200; color: white;">Voir les Plans</a>
+            </div>
+            <div class="testimonial">
+                <p><em>"5 stars - Amazing stay in Sidi Bou Said!" - Happy Traveler</em></p>
+            </div>
+
+            <!-- New Activities Section -->
+            <div class="activities-section">
+                <h2>Exciting Activities</h2>
+                <div class="activity-cards">
+                    <div class="activity-card">
+                        <img src="img/cof" alt="Coffee Tasting Logo" class="activity-logo">
+                        <h3>Coffee Tasting</h3>
+                        <p>Enjoy a rich experience with local Tunisian coffee blends.</p>
+                        <a href="#" class="btn" style="background-color: #6f4e37;">Book Now</a>
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/shooting.jpg" alt="Shooting Activities Logo" class="activity-logo">
+                        <h3>Shooting Activities</h3>
+                        <p>Test your skills with thrilling shooting ranges.</p>
+                        <a href="#" class="btn" style="background-color: #8b0000;">Book Now</a>
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/paintball.png" alt="Paintball Logo" class="activity-logo">
+                        <h3>Paintball</h3>
+                        <p>Action-packed fun with friends in scenic locations.</p>
+                        <a href="#" class="btn" style="background-color: #32cd32;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 BonPlan Tunisie. Tous droits réservés.</p>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+
+            if(i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+
+    
+    </script>
+    <script>
+    const heroSection = document.querySelector('.hero');
+    const heroImages = [
+        'carthage.jpg',
+        'balade.jpg',
+        'thecliff.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeHeroBackground() {
+        heroSection.style.backgroundImage = `url(${heroImages[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % heroImages.length; // Cycle through images
+    }
+
+    setInterval(changeHeroBackground, 3000); // Change every 3 seconds
+</script>
+</body>
+</html>

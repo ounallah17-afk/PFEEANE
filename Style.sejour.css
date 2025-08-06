@@ -1,0 +1,148 @@
+.single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .single-hero-slide .hero-slides-content {
+    display: inline-block;
+    background-image: url(beach.jpg);
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 2px solid #cb8670;
+    text-align: center; 
+    width: 1400px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+    
+    .single-hero-slide .hero-slides-content .line {
+      width: 90px;
+      height: 2px;
+      background-color: #f7e0d8;
+      margin: 0 auto 30px; }
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 72px;
+      color: #ffffff;
+      margin-bottom: 0;
+      display: inline-block; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 48px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 36px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 30px; } }
+    .single-hero-slide .hero-slides-content p {
+      font-size: 14px;
+      color: #ffffff; }
+
+  .single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .single-hero-slide .hero-slides-content {
+    display: inline-block;
+    padding: 60px 50px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 2px solid #cb8670;
+    text-align: center; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 40px 20px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 30px 20px; } }
+    @media only screen and (max-width: 767px) {
+      .single-hero-slide .hero-slides-content {
+        padding: 20px; } }
+    .single-hero-slide .hero-slides-content .line {
+      width: 90px;
+      height: 2px;
+      background-color: #cb8670;
+      margin: 0 auto 30px; }
+    .single-hero-slide .hero-slides-content h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 72px;
+      color: #ffffff;
+      margin-bottom: 0;
+      display: inline-block; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 48px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 36px; } }
+      @media only screen and (max-width: 767px) {
+        .single-hero-slide .hero-slides-content h2 {
+          font-size: 30px; } }
+    .single-hero-slide .hero-slides-content p {
+      font-size: 14px;
+      color: #e9dede; }
+    
+
+    .room-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .room-card {
+      width: 300px;
+      background-color:transparent;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .room-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .room-card h3 {
+      margin-top: 10px;
+    }
+
+    .room-card p {
+      margin-top: 5px;
+    }
+
+    .book-button {
+      background-color: #f8abe5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+footer {
+    position: fixed; /* Fix the footer at the bottom */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    background-color: #0f0e0e; /* Background color for footer */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text */
+    z-index: 1000; /* Ensure it stays above other content */
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar El Cap</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #fffefe;
+        }
+        .property-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .property-info p {
+            margin: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .amenities, .advantages {
+            margin-top: 40px;
+        }
+        .amenities h2, .advantages h2 {
+            color: #333;
+        }
+        .amenities ul, .advantages ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .amenities li, .advantages li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+       <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>BonPlan Tunisie</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="Acceuil.html" class="link active">Acceuil</a></li>
+                    <li><a href="sejours.html" class="link">Séjour en Tunisie</a></li>
+                    <li><a href="plan.html" class="link">Plan</a></li>
+                    <li><a href="qui.html" class="link">Qui sommes-nous?</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    <div class="container">
+        <h1>Dar El Cap</h1>
+        <div class="property-info">
+            <p>10 Personnes</p>
+            <p>Prix: à partir de 1000 TND</p>
+        </div>
+        <p>Dar El Cap est une résidence luxueuse qui allie confort et élégance dans un cadre idyllique. Cette magnifique villa se compose de quatre chambres spacieuses, chaque chambre est un havre de paix, équipé de meubles haut de gamme, la ville est disponible pour location en entier pour votre séjour en famille ou pour vos événements.</p>
+        <p>La pièce maîtresse de cette propriété est sans aucun doute la piscine à débordement, offrant une vue imprenable sur la mer. Plongez dans ses eaux rafraîchissantes tout en admirant le paysage environnant, créant des souvenirs inoubliables.</p>
+        <p>Pour les amateurs de remise en forme, vous pourrez maintenir votre routine d'entraînement, une salle de sport est à votre disposition.</p>
+        <p>Cette villa est bien plus qu'une simple résidence, c'est une expérience de luxe et de confort absolu, où chaque détail a été soigneusement pensé pour vous offrir un séjour exceptionnel.</p>
+        
+        <div class="gallery">
+            <img src="dar-el-cap.jpg" alt="Image 1">
+            <img src="dar-el-cap (1).jpg" alt="Image 2">
+            <img src="dar-elcap-3.jpg" alt="Image 3">
+            <img src="dar-elcap-4.jpg" alt="Image 4">
+        </div>
+        
+        <div class="amenities">
+            <h2>Équipements de la maison</h2>
+            <ul>
+                <li>En Montagne</li>
+                <li>Piscine</li>
+                <li>Spa</li>
+                <li>Petit-dej</li>
+            </ul>
+        </div>
+        
+        <div class="advantages">
+            <h2>Avantages de la maison</h2>
+            <ul>
+                <li>La maison est situé sur une montagne.</li>
+                <li>A 10 minutes à pieds de la plage.</li>
+                <li>Baignoire.</li>
+                <li>L'entretien de la piscine est minuit.</li>
+              
+            </ul>
+        </div>
+    </div>
+       <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 BonPlan Tunisie. Tous droits réservés.</p>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+</html>
