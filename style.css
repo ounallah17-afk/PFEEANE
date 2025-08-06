@@ -13,11 +13,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Assurez-vous que les éléments s'empilent verticalement */
+    flex-direction: column;
     min-height: 110vh;
-    background:white;
+    background: white;
 }
 
+/* =========================
+   NAVIGATION STYLES 
+========================= */
 .nav {
     position: fixed;
     top: 0;
@@ -26,8 +29,26 @@ body {
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: linear-gradient( white, transparent);
+    background: linear-gradient(white, transparent);
     z-index: 100;
+}
+
+/* Plan page specific nav styling */
+.plan-page .nav {
+    background: linear-gradient(transparent);
+}
+
+.plan-page .nav-logo p {
+    color: rgb(46, 35, 35);
+}
+
+.plan-page .nav-menu ul li .link {
+    color: #333;
+}
+
+.plan-page .link:hover,
+.plan-page .active {
+    border-bottom: 2px solid #333;
 }
 
 .nav-logo p {
@@ -88,6 +109,9 @@ body {
     display: none;
 }
 
+/* =========================
+   FORM STYLES 
+========================= */
 .form-box {
     position: relative;
     display: flex;
@@ -213,6 +237,366 @@ header {
     text-decoration: underline;
 }
 
+/* =========================
+   HERO SECTION STYLES 
+========================= */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 2rem;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('m.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   SEJOUR SECTION STYLES 
+========================= */
+.single-hero-slide .slide-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.single-hero-slide .hero-slides-content {
+    display: inline-block;
+    background-image: url(beach.jpg);
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 2px solid #cb8670;
+    text-align: center; 
+    width: 1400px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.single-hero-slide .hero-slides-content .line {
+    width: 90px;
+    height: 2px;
+    background-color: #cb8670;
+    margin: 0 auto 30px;
+}
+
+.single-hero-slide .hero-slides-content h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 72px;
+    color: #ffffff;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.single-hero-slide .hero-slides-content p {
+    font-size: 14px;
+    color: #e9dede;
+}
+
+.room-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.room-card {
+    width: 300px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.room-card h3 {
+    margin-top: 10px;
+}
+
+.room-card p {
+    margin-top: 5px;
+}
+
+.book-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   PLAN PAGE STYLES 
+========================= */
+.image-placeholder img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.image-placeholder img:hover {
+    transform: scale(1.05);
+}
+
+.plan-teaser p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.plan-teaser .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #777;
+    font-size: 1em;
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.activities-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.activities-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.activity-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activity-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card h3 {
+    font-size: 1.3em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.activity-card .btn {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* =========================
+   FOOTER STYLES 
+========================= */
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE STYLES 
+========================= */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 3rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-hero-slide .hero-slides-content {
+        padding: 40px 20px;
+    }
+    
+    .single-hero-slide .hero-slides-content h2 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide .hero-slides-content {
+        padding: 30px 20px;
+    }
+    
+    .single-hero-slide .hero-slides-content h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single-hero-slide .hero-slides-content {
+        padding: 20px;
+    }
+    
+    .single-hero-slide .hero-slides-content h2 {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 786px) {
     .nav-button {
         display: none;
@@ -227,16 +611,22 @@ header {
         top: -800px;
         display: flex;
         justify-content: center;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.9);
         width: 100%;
         height: 90vh;
         backdrop-filter: blur(20px);
         transition: .3s;
+        z-index: 999;
     }
 
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
+        padding-top: 50px;
+    }
+
+    .nav-menu ul li {
+        margin: 20px 0;
     }
 
     .nav-menu-btn {
@@ -245,16 +635,16 @@ header {
 
     .nav-menu-btn i {
         font-size: 25px;
-        color: #fff;
+        color: #333;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.8);
         border-radius: 50%;
         cursor: pointer;
         transition: .3s;
     }
 
     .nav-menu-btn i:hover {
-        background: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 1);
     }
 }
 
@@ -278,137 +668,5 @@ header {
         flex-direction: column;
         gap: 0;
     }
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 4rem 2rem;
-
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 2rem auto;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.hero-content .btn {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-}
-
-@media (max-width: 768px) {
-    .hero-content {
-        padding: 3rem 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero-content .btn {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
-}
-
-main {
-    flex-grow: 1;
-}
-
-footer {
-    background-color: #faf4f4; /* Couleur de fond du footer */
-    color: #fff; /* Couleur du texte */
-    padding: 20px; /* Espacement intérieur */
-    padding-bottom: 0px;
-    text-align: center; /* Centrer le texte */
-    clear: both; /* S'assurer qu'il ne soit pas à côté des autres éléments */
-    width: 100%; /* Prendre toute la largeur de la page */
-    position: relative; /* Positionner le footer */
-    margin-bottom: 1; /* Placer le footer en bas */
-
-}
-
-.footer-content {
-    max-width: 800px; /* Largeur maximale du contenu */
-    margin: 0 auto; /* Centrer le contenu */
-}
-
-.footer-content p {
-    margin: 10px 0; /* Espacement autour du texte */
-}
-
-.footer-content ul {
-    list-style: none; /* Supprimer les puces de la liste */
-    padding: 0; /* Supprimer le padding par défaut */
-}
-
-.footer-content ul li {
-    display: inline; /* Afficher les éléments de la liste en ligne */
-    margin: 0 15px; /* Espacement entre les éléments */
-}
-
-.footer-content ul li a {
-    color: #fff; /* Couleur des liens */
-    text-decoration: none; /* Supprimer le soulignement */
-}
-
-.footer-content ul li a:hover {
-    text-decoration: underline; /* Souligner au survol */
-}
-.hero {
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    background-image: url('img/m.jpg'); /* Background image */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    color: white; /* Text color */
-    display: flex; /* Use flexbox for centering content */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    text-align: center; /* Center text */
-}
-
-
-.hero h1 {
-    font-size: 2.5em; /* Taille de police pour le titre */
-    margin-bottom: 20px; /* Espacement en bas */
-}
-
-.hero p {
-    font-size: 1.2em; /* Taille de police pour le paragraphe */
-    margin-bottom: 30px; /* Espacement en bas */
-}
-
-.hero .btn {
-    background-color: #007bff; /* Couleur du bouton */
-    color: white; /* Couleur du texte du bouton */
-    padding: 10px 20px; /* Espacement interne du bouton */
-    border: none; /* Pas de bordure */
-    border-radius: 5px; /* Coins arrondis */
-    text-decoration: none; /* Pas de soulignement */
-    transition: background-color 0.3s; /* Transition pour l'effet au survol */
-}
-
-.hero .btn:hover {
-    background-color: #0056b3; /* Couleur au survol */
 }
 
